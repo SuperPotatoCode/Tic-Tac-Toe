@@ -1,0 +1,68 @@
+/* Box Model Hack */
+
+  
+  /* Clear fix hack */
+ 
+  
+
+  
+  /******************************************
+  /* BASE STYLES
+  /*******************************************/
+  
+  body {
+    background: linear-gradient(to right, aqua, rgb(0, 40, 216));
+     padding: 0%;
+     margin: 0%;
+  }
+
+  h1 {
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+  }
+
+  .parent {
+    display: grid;
+    grid-gap: 7px;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px;
+  }
+
+  .parent > button {
+    display: grid;
+    place-items: center;
+
+    cursor: pointer;
+    
+    background-color: rgb(255, 255, 255);
+    font-size: 2rem;
+  }
+
+  .parent > button:hover {
+    background-color: aliceblue;
+  }
+
+
+ 
+  
+ 
+  
+  /******************************************
+  /* LAYOUT
+  /*******************************************/
+  header {
+  
+  }
+  
+  footer {
+  
+  }
+  
+  /******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
+  
