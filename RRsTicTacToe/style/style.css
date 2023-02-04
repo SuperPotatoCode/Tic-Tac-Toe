@@ -9,18 +9,38 @@
   /******************************************
   /* BASE STYLES
   /*******************************************/
-  
+  *{
+    padding: 0;
+    margin: 0;
+  }
+
   body {
     background: linear-gradient(to right, aqua, rgb(0, 40, 216));
      padding: 0%;
      margin: 0%;
   }
 
-  h1 {
+  h1, h2{
     text-align: center;
   }
-  h2 {
-    text-align: center;
+ 
+  .reset{
+    padding: 4% 0 0 0 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  #reset{
+    font-size:1.5rem;
+    background-color:aquamarine;
+    color: black;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    margin-left: 1em;
+    cursor: pointer;
   }
 
   .parent {
@@ -35,9 +55,7 @@
   .parent > button {
     display: grid;
     place-items: center;
-
     cursor: pointer;
-    
     background-color: rgb(255, 255, 255);
     font-size: 2rem;
   }
@@ -46,8 +64,24 @@
     background-color: aliceblue;
   }
 
+  .display{
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    margin: 1em 0; 
+  }
 
- 
+  .hide{
+    display: none;
+  }
+
+ .playerX{
+  color: red;
+ }
+
+ .playerO{
+  color: blue;
+ }
   
  
   

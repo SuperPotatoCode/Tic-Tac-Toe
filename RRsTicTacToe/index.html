@@ -11,19 +11,21 @@
 </head>
 <body>
     <h1>Welcome To Tic-Tac-Toe</h1>
-    <h2 class="currentPlayer">it is the current player's turn</h2>
-     <div class="parent">
+    <h2 class="currentPlayer display">It is <span class="display-player playerX">X</span>'s turn</h2>
+     <div class="parent container">
         <button class='tile' id="top TL">1</button>
-        <button class='tile' id="top TM">2</button>
-        <button class='tile' id="top TR">3</button>
-        <button class='tile' id="middle ML">4</button>
-        <button class='tile' id="middle MM">5</button>
-        <button class='tile' id="middle MR">6</button>
-        <button class='tile' id="bottom BL">7</button>
-        <button class='tile' id="bottom BM">8</button>
-        <button class='tile' id="bottom BR">9</button>
+        <button class='tile' id="top TM"></button>
+        <button class='tile' id="top TR"></button>
+        <button class='tile' id="middle ML"></button>
+        <button class='tile' id="middle MM"></button>
+        <button class='tile' id="middle MR"></button>
+        <button class='tile' id="bottom BL"></button>
+        <button class='tile' id="bottom BM"></button>
+        <button class='tile' id="bottom BR"></button>
     </div>
+    <section class="display result hide announcer"></section>
+    <div class="controls reset"><button type="button" id="reset">Reset</button></div>
 
-    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
