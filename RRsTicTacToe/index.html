@@ -10,18 +10,22 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <h1>Welcome To Tic-Tac-Toe</h1>
-    <h2 class="currentPlayer display">It is <span class="display-player playerX">X</span>'s turn</h2>
+    <section>
+        <h1>Welcome To Tic-Tac-Toe</h1>
+    </section>
+    <section class="display">
+        It is <span class="display-player playerX">X</span>'s turn
+    </section>
      <div class="parent container">
-        <button class='tile' id="top TL">1</button>
-        <button class='tile' id="top TM"></button>
-        <button class='tile' id="top TR"></button>
-        <button class='tile' id="middle ML"></button>
-        <button class='tile' id="middle MM"></button>
-        <button class='tile' id="middle MR"></button>
-        <button class='tile' id="bottom BL"></button>
-        <button class='tile' id="bottom BM"></button>
-        <button class='tile' id="bottom BR"></button>
+        <div class='tile' id="top TL"></div>
+        <div class='tile' id="top TM"></div>
+        <div class='tile' id="top TR"></div>
+        <div class='tile' id="middle ML"></div>
+        <div class='tile' id="middle MM"></div>
+        <div class='tile' id="middle MR"></div>
+        <div class='tile' id="bottom BL"></div>
+        <div class='tile' id="bottom BM"></div>
+        <div class='tile' id="bottom BR"></div>
     </div>
     <section class="display result hide announcer"></section>
     <div class="controls reset"><button type="button" id="reset">Reset</button></div>

@@ -44,15 +44,29 @@
   }
 
   .parent {
+    margin: 0 auto;
+    max-width: 300px;
     display: grid;
     grid-gap: 7px;
     justify-content: center;
     align-content: center;
-    grid-template-columns: 150px 150px 150px;
-    grid-template-rows: 150px 150px 150px;
+    grid-template-columns: 33% 33% 33%; 
+    grid-template-rows: 33% 33% 33%; 
+  }
+
+  .tile{
+    border: 1px solid white;
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 55px;
+    cursor: pointer;
   }
 
   .parent > button {
+    border: 1px solid black;
     display: grid;
     place-items: center;
     cursor: pointer;
