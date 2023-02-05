@@ -4,13 +4,13 @@ window.addEventListener('DOMContentLoaded', () => {
     const resetButton = document.querySelector('#reset');
     const announcer = document.querySelector('.result');
 
-    let board = ['','','','','','','','','',];
+    let board = ['','','','','','','','',''];
     let currentPlayer = 'X';
     let isGameActive = true;
 
     const PLAYERX_WON = 'PLAYERX_WON';
     const PLAYERO_WON = 'PLAYERO_WON';
-    const TIE = 'TIE';
+    const t = 'TIE';
 
     //Board Reference
     // [0][1][2]
@@ -102,22 +102,25 @@ window.addEventListener('DOMContentLoaded', () => {
         tile.addEventListener('click', () => userAction(tile,index));
     });
 
-    resetButton.addEventListener('click', resetBoard); 
+    
 
     const resetBoard = () => {
         board = ['','','','','','','','',''];
         isGameActive = true;
         announcer.classList.add('hide');
       
-    }
-    
-    if(currentPlayer === 'O'){
-        changePlayer();
+        
+        
+        if(currentPlayer === 'O'){
+            changePlayer();
+        }
+
+        tiles.forEach(tile => {
+            tile.innerText = '';
+            tile.classList.remove('playerX');
+            tile.classList.remove('playerO'); 
+        })  
     }
 
-    tiles.forEach(tile => {
-        tile.innerText = '';
-        tile.classList.remove('playerX');
-        tile.classList.remove('playerO'); 
-    })
+    resetButton.addEventListener('click', resetBoard); 
 })
