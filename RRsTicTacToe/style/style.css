@@ -16,8 +16,7 @@
 
   body {
     background: linear-gradient(to right, aqua, rgb(0, 40, 216));
-     padding: 0%;
-     margin: 0%;
+  
   }
 
   h1, h2{
@@ -63,19 +62,6 @@
     align-items: center;
     font-size: 55px;
     cursor: pointer;
-  }
-
-  .parent > button {
-    border: 1px solid black;
-    display: grid;
-    place-items: center;
-    cursor: pointer;
-    background-color: rgb(255, 255, 255);
-    font-size: 2rem;
-  }
-
-  .parent > button:hover {
-    background-color: aliceblue;
   }
 
   .display{
